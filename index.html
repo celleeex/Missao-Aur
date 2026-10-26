@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Missão Aura - Cadastro </title>
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <form id="formulario" action="javascript:void(0)" method="get">
+        <label>Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br>
+        <br><label>Data de Nascimento:</label><br>
+        <input type="date" id="data" name="data" placeholder="Data de Nascimento"><br>
+
+        <br><label id="pergunta1"> 1. Você encontra uma máquina desconhecida no planeta. O que faz?</label><br>
+        <br><input type="radio" name="pergunta1" id="p1opcao1" value="1"> A) Tento descobrir como ela funciona e consertá-la.<br> 
+        <input type="radio" name="pergunta1" id="p1opcao2" value="2"> B) Exploro a região ao redor da máquina.<br>
+        <input type="radio" name="pergunta1" id="p1opcao3" value="3"> C) Analiso sua composição e recolho dados.<br>
+        <input type="radio" name="pergunta1" id="p1opcao4" value="4"> D) Organizo a equipe para investigar com segurança.<br>
+
+        <br><label id="pergunta2"> 2. Qual equipamento você levaria para a missão?</label><br>
+        <br><input type="radio" name="pergunta2" id="p2opcao1" value="1"> A) Um kit de ferramentas e um robô de manutenção.<br> 
+        <input type="radio" name="pergunta2" id="p2opcao2" value="2"> B) Um scanner de terrenos desconhecidos.<br>
+        <input type="radio" name="pergunta2" id="p2opcao3" value="3"> C) Um laboratório portátil.<br>
+        <input type="radio" name="pergunta2" id="p2opcao4" value="4"> D) Um dispositivo de comunicação e planejamento.<br>
+        
+        <br><label id="pergunta3"> 3. Qual atividade parece mais interessante?</label><br>
+        <br><input type="radio" name="pergunta3" id="p3opcao1" value="1"> A) Consertar e otimizar a máquina.<br>
+        <input type="radio" name="pergunta3" id="p3opcao2" value="2"> B) Descobrir regiões nunca exploradas.<br>
+        <input type="radio" name="pergunta3" id="p3opcao3" value="3"> C) Investigar formas de vida alienígenas.<br>
+        <input type="radio" name="pergunta3" id="p3opcao4" value="4"> D) Coordenar uma equipe de exploradores.<br>
+
+        <br><label id="pergunta4"> 4. Como você ajudaria a equipe diante de um problema?</label><br>
+        <br><input type="radio" name="pergunta4" id="p4opcao1" value="1"> A) Procuraria uma solução técnica.<br>
+        <input type="radio" name="pergunta4" id="p4opcao2" value="2"> B) Procuraria um caminho alternativo.<br>
+        <input type="radio" name="pergunta4" id="p4opcao3" value="3"> C) Analisaria as informações antes de agir.<br>
+        <input type="radio" name="pergunta4" id="p4opcao4" value="4"> D) Distribuiria tarefas e organizaria um plano.<br>
+        <br><button type="submit">Descobrir meu Perfil</button>
+    </form>
+    <div id="resultado">
+        <button type="button" id="refazerTeste" class="btn-refazer">Refazer Teste</button>
+    </div>
+  <script src="js/sketch.js"></script>
+ </body>
+</html>
