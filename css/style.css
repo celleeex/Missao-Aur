@@ -1,0 +1,118 @@
+   * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   html, body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    min-height: 100vh;
+   }
+   body {
+      min-height: 100vh;
+
+    background-image: url("../img/aura-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+   }
+input {
+  padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #85a1ff;
+    background-color: #f0e8dc;
+}
+button {
+  width: 177px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  border: 1px solid #85a1ff;
+  background-color: #f0e8dc;
+}
+#formulario {
+  background-color: #9aceff;
+  border: 1px solid #85a1ff;
+  border-radius: 10px;
+  width: min(800px, 90vw);
+  max-width: 800px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: auto;
+  left: auto;
+  z-index: 1;
+  transform: none;
+  margin: 0 auto;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+  ::-webkit-scrollbar {
+     width: 12px;
+   }
+   ::-webkit-scrollbar-track {
+    background-color: #d9edff;
+   }
+   ::-webkit-scrollbar-thumb {
+    background-color: #4d6a85;
+    border-radius: 20px;
+   }
+   ::-webkit-scrollbar-thumb:hover {
+    background-color: #fcffcf;
+   }
+#resultado {
+    max-width: 700px;
+    margin: 30px auto;
+}
+.resultado-card {
+    background: #9aceff;
+    color: #e8faff;
+    border: 1px solid #85a1ff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+}
+.resultado-card h2,
+.resultado-card h3 {
+  text-align: center;
+    color: #ddfdff;
+    font-weight: bold;
+}
+.resultado-card p {
+    line-height: 1.6;
+    font-weight: bold;
+}
+.resultado-card img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.resultado-card button {
+    background: #589b9f;
+    color: #090b1a;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (max-width: 499px) {
+    #resultado {
+        width: 100%;
+    }
+    .resultado-card {
+        padding: 15px;
+    }
+    .resultado-card h2 {
+        font-size: 20px;
+    }
+}
